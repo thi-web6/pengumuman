@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Scores</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #26747E; /* Background color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            max-width: 1200px;
+            max-height: 90vh;
+            border-radius: 20px;
+            padding: 40px;
+            box-sizing: border-box;
+            background: #ffffff; /* Background color of the container */
+            box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+            z-index: 2; /* Ensure container content is above the background */
+        }
+
+        .logo-left, .logo-right {
+            position: absolute;
+            top: 20px;
+            height: 60px;
+            width: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+            z-index: 3; /* Ensure logo is above the background */
+        }
+
+        .logo-left {
+            left: 20px;
+            background-image: url("owl.png"); /* Update with your left logo path */
+        }
+
+        .logo-right {
+            right: 20px;
+            background-image: url("logo.jpeg"); /* Update with your right logo path */
+        }
+
+        .brand-title {
+            margin-top: 80px; /* Adjust margin to avoid overlap with the logos */
+            font-weight: 900;
+            font-size: 2.5rem;
+            color: #26747E;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #ffffff; /* Ensure table background is white for readability */
+            z-index: 2; /* Ensure table is above background effects */
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #26747E;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e1e1e1;
+        }
+
+        .footer {
+            margin-top: auto;
+            color: #555;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-left"></div>
+        <div class="logo-right"></div>
+        <h1 class="brand-title">Student Scores</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Full Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Fardiaz Chaerul Putra</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Khaidar Ali</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Vikry Aldiano Putra Firmansyah</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Oktavianus Axell Rafael</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Achmad Qusyairi Shochibi</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Muhammad Fadhil Ristiawan</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Nur Sanggiri</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Muhammad Rasyid</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Abdul Fatah</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Muhammad Faris Azmiarif</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Aji Ibram Handayu Bakti</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Danang Satya Pratama</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Fazril Abdillah Salahudin</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Andi Attar Arrabih Pasya</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Raihasa Al Madani</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Fahmy Rifky Saputra</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Muhammad Fathi Al-Naqi</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Rayhan Khoirul Ibad</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Mirza Azwan Waranggani</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Azriel Fathir Alfath</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Mohammad Alf Akbar</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Dhany Firmansyah</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Adelio Raditya</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Rizky Ahmad Abidin</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Aldi Marliyano Saputra</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>Zabrangr</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Adli Hazimulfikri Setiawan</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>Audrel Qiano Mirza Hakim</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>Rakha Aditya Mahardika</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer">
+            &copy; 2024 Your Organization
+        </div>
+    </div>
+</body>
+</html>
